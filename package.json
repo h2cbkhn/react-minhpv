@@ -1,69 +1,19 @@
 {
-  "name": "cloud-frontend-v1",
-  "version": "1.0.0",
-  "author": "Piri.ai",
+  "name": "nextjs-ecommerce",
+  "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "axios": "^0.21.1",
-    "bootstrap": "^4.4.1",
-    "dotenv": "^8.2.0",
-    "lodash": "^4.17.21",
-    "moment": "^2.29.1",
-    "prop-types": "^15.7.2",
-    "react": "^17.0.1",
-    "react-bootstrap": "^1.5.1",
-    "react-dom": "^17.0.1",
-    "react-redux": "^7.2.2",
-    "react-router": "^5.2.0",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "^4.0.3",
-    "redux": "^4.0.5",
-    "redux-pack": "^0.1.5",
-    "redux-persist": "^5.10.0",
-    "redux-thunk": "^2.3.0",
-    "rxjs": "^6.6.6",
-    "validator": "^12.2.0"
-  },
   "scripts": {
-    "start": "react-app-rewired start",
-    "build": "react-app-rewired build",
-    "lint": "eslint --ext .js --ext .jsx --ignore-pattern **/*.test.js src/",
-    "precise-commits": "precise-commits  --whitelist \"**/src/**/*\" --check-only",
-    "husky": "npm run lint && npm run precise-commits",
-    "test": "react-app-rewired test",
-    "eject": "react-app-rewired eject"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run husky"
-    }
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "homepage": "",
-  "devDependencies": {
-    "@babel/plugin-proposal-optional-chaining": "^7.13.8",
-    "cross-env": "^5.2.1",
-    "eslint-config-airbnb": "^18.2.1",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-react": "^7.22.0",
-    "eslint-plugin-react-hooks": "^1.7.0",
-    "husky": "^4.3.8",
-    "node-sass": "^5.*",
-    "precise-commits": "^1.0.2",
-    "prettier": "^2.2.1",
-    "react-app-rewired": "^2.1.8",
-    "sass-resources-loader": "^2.1.1"
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "js-cookie": "^2.2.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.14",
+    "next": "10.0.1",
+    "react": "17.0.1",
+    "react-dom": "17.0.1"
   }
 }
